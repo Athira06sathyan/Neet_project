@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/Login.css">
+    
+</head>
+
+<body>
+    <div>
+        <h1 class="label_heading"><span style="color: rgba(163, 247, 253, 0.973);"> Quiz</span>  NEET</h1>
+
+        <div class="container">
+            <h1 class="label">Log in</h1>
+            <form class="login_form" name="form" onsubmit="return validateForm()">
+                <div class="font"></div>
+                <input type="text" name="email" id="email" placeholder="Phone Number">
+                <div id="email_error" class="error"></div>
+                <div class="font"></div>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <div id="pass_error" class="error"></div>
+                <ul class="set">
+                    
+                    <button type="submit">SUBMIT</button>
+                    
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/Valid.js"></script>
+</body>
+</html>

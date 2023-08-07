@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET Entrance Prep Helper - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	
+	<div class="profile-container">
+        <img src="image/Three-Statistics-That-Will-Make-You-Rethink-Your-Professional-Profile-Picture-1024x1024.jpg" alt="Profile Picture" class="profile-picture">
+        <span class="profile-name">Abbie Watson</span>
+      </div>
+	  <h1 class="label_heading"><span style="color: skyblue;"> Quiz</span>  NEET</h1>
+</head>
+
+<body>
+    <div class="container"></div>
+    <h1>Dashboard</h1>
+
+    <div style="display: flex; justify-content: space-around;">
+        <div style="width: 25%;">
+            <canvas id="BiologyChart" width="200" height="200"></canvas>
+        </div>
+        <div style="width: 25%;">
+            <canvas id="PhysicsChart" width="200" height="200"></canvas>
+        </div>
+        <div style="width: 25%;">
+            <canvas id="ChemistryChart" width="200" height="200"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Sample data for the graphs (replace with your actual data)
+        const BiologyData = [80, 70, 90, 85, 75];
+        const PhysicsData = [60, 65, 70, 75, 80];
+        const ChemistryData = [50, 75, 70, 85, 90];
+        const days = ['July 28', 'July 29', 'July 30', 'July 31', 'Aug 1'];
+
+        // Create a function to generate a bar chart
+        function createBarChart(canvasId, data, label, color) {
+            new Chart(canvasId, {
+                type: 'bar',
+                data: {
+                    labels: days,
+                    datasets: [{
+                        label: label,
+                        data: data,
+                        backgroundColor: color,
+                        borderWidth: 1,
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Call the function to create the subject graphs
+        createBarChart('BiologyChart', BiologyData, 'Biology', 'rgba(54, 162, 235, 0.6)');
+        createBarChart('PhysicsChart', PhysicsData, 'Physics', 'rgba(255, 99, 132, 0.6)');
+        createBarChart('ChemistryChart', ChemistryData, 'Chemistry', 'rgba(155, 99, 45, 0.6)');
+    </script>
+   <div><button id="colorChangeButton" class="color-button-dashboard" onclick="startquiz">Start Quiz</button>
+    <script  src="js/script.js"></script></div>
+</body>
+
+</html>
+
+    </body>
+    </html>

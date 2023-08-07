@@ -1,0 +1,92 @@
+*{
+    padding-top:0;
+    margin: 0;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: sans-serif;
+    border-color: black;
+    text-align: center;
+}
+.container{
+    position: relative;
+    margin-top: -30px;
+    width: 450px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+.label_heading{
+	position: relative;
+	margin-top: 10px;
+	margin-left: -20px;
+    padding: 50px 130px;
+    font-size: 35px;
+    font-weight: 200;
+    color: black;
+}
+.label{
+    padding: 20px 130px;
+    font-size: 35px;
+    font-weight: 200;
+    color: black;
+}
+.login_form{
+    padding:20px 40px
+}
+ 
+.login_form .font{
+    font-size: 18px;
+    color:black;
+    margin:5px 0;
+}
+
+.login_form input{
+    height:40px;
+    width:350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border:1px solid;
+
+}
+
+.login_form .font{
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.login_form button{
+    margin-top: 25px;
+    margin-right: 50px;
+    height: 45px;
+    width: 300px;
+    background-color: dodgerblue;
+    transform: .5s;
+    color: white;
+}
+
+.login_form button:hover{
+    background-color: dodgerblue;
+}
+
+.set{
+    padding: 10px;
+    color: dodgerblue;
+    text-align: left;
+    list-style-type: none;
+}
+
+.login_form email_error,
+.login_form pass_error {
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: darkred;
+    text-align: left;
+    display: none;
+    padding-left: 10px; 
+}
